@@ -1,0 +1,510 @@
+/*external Css*/
+*
+{
+ margin: 0;
+ padding: 0;
+ border: 0;
+ font-size: 100%;
+}
+/*provide font-family that is include in body section*/
+body {
+  	  font-family: 'Roboto', sans-serif;
+}
+/*css for all H1 and h3 tag contain*/
+h1, h3{
+    	line-height: 20px;
+    	margin: 0 0 8px 0;
+}
+/*
+Header
+ */
+#header {
+		 color: #fff;	
+		 line-height: 96px;
+		 position: absolute;
+		 text-align: right;
+		 top: 32px;
+		 width: 100%;
+		 z-index: 3;
+}
+
+#header .inner {
+			    position: relative;
+}
+#header a {
+		   padding: 0 10px;
+		   color: #fff;
+		   text-decoration: none;
+		   font-size: 16px;
+
+}
+/*Hover in navigation bar*/
+#header a:hover{
+color: #9CC3D5FF;
+}
+
+/*give border to all pages in both left and right content*/
+.inner {
+		max-width: 1200px;
+		margin: 0 auto;
+}
+/*
+Banner
+ */
+.banner {
+		 background-image: url(../images/sky.JPG);
+		 padding: 100px 0 70px 0;
+		 text-align: center;
+		 background-size: cover;
+		 position: relative;
+		 background-attachment: fixed;
+}
+.banner h1 {
+			font-size: 50px;
+			font-weight: 400;
+			color: #fff;
+			margin: 0 0 8px 0;
+
+}
+.banner .inner {
+				border-top: 2px solid rgba(255, 255, 255, 0.2);
+				position: relative;
+				padding-top: 135px;
+}
+/*Digital timer Css*/
+#clock{
+        font-size: 35px;
+        width: 500px;
+        margin-left: 330px;
+        margin-top: 30px;
+        text-align: center;
+        border: 0.5px solid white;
+        border-radius: 5px;
+        color: white;
+        }
+
+/*
+css of middle section in hoempage
+ */
+
+#about{
+	   padding: 6em 0 4em 0;/*top right bottom left*/
+}
+.image {
+		box-shadow: 0px 0px 0px 7px #fff, 0px 0px 0px 8px rgba(0, 0, 0, 0.1);
+		border-radius: 100%;
+		margin-bottom: 3em;
+}
+.image img {
+			width: 100%;
+			border-radius: 100%;
+}
+
+.button {
+		 border-radius: 4px;
+		 display: inline-block;
+		 font-weight: 700;
+		 line-height: 2.95em;
+		 padding: 0 1.5em;
+		 text-decoration: none;
+		 background-color: #3498db;
+		 color: #fff;
+		
+}
+#about h3 {
+		   font-size: 1.75em;
+		   margin: 0 0 1em 0;
+}
+#about p{
+	text-align: justify; text-justify: inter-word;
+}
+.about-blogs {
+			 background-color: #3498db;
+}
+.about-blogs .button {
+					 background-color: #fff;
+					 color: #3498db;
+}
+/*
+cv css
+*/
+#concv{
+
+	   padding: 10px 0 10px 0;/*top right bottom left*/
+	   background-color: white;
+}
+/*gives crisp shape to paragraph and looks polish*/
+#concv p{
+	text-align: justify; text-justify: inter-word;
+}
+/*css of both left and right side in CV*/
+.container{
+	display: grid;
+	grid-template-columns: 40% 60%;
+}
+/*
+css of left cv
+*/
+.col-l{
+	background-color: white;
+
+}
+.container img {
+		margin-left: 145px;
+		width: 300px
+		border: green solid 3px;
+		height: 300px
+		filter: grayscale(0.8);
+		margin-top: 20px;
+	} 
+
+#concv h1 {		  
+	color: black;
+	font-size: 40px; 
+	font-weight: bold;
+	text-align: center;
+	margin-top: 20px;
+}
+#concv h4{
+	color: black;
+	font-size:25px;
+	text-align: center;
+	margin-top: 50px;  
+}
+.col-l h5{
+	color: black;
+	font-size: 20px; 
+	text-align: center;
+	margin-top: 50px;
+}
+.profile-content{
+	height: 100px;
+	width: 325px;
+	margin :20px 0 80px 73px;
+}
+
+.container p{
+	color:black;
+	font-size: 20px;
+}
+
+.contact{
+	margin-top: 10px;
+	display: grid;
+	grid-template-columns: repeat(2,1fr);
+	margin-bottom: 20px;
+	margin-left: 30px;
+} 
+.contact_info h3{
+	color: black;
+	margin-top: 100px;
+	margin-left: 170px;
+	text-transform: uppercase;
+	font-size-adjust: 20px;
+}
+
+.contact-left{
+	padding-left: 70px;
+}
+.contact-right p{
+	text-align: left;
+	margin-left: -40px;
+	color: black;
+}
+/*css of right cv*/
+.col-r{
+	background-color: white;
+	margin-left: 50px; 
+	padding-right: 30px; 
+}
+.col-r h1{
+	
+	text-align: left;
+	font-size: 30px;
+	margin-left: 40px;
+	margin-top: 50px;
+	font-weight: lighter;
+	padding: 0;
+}
+.content{
+	margin-top: 40px;
+}
+.content h3{
+	color: black ;
+	margin-top: 0px;
+	text-align: left;
+	font-size: 25px;
+	text-align: bold;
+	margin-left: 40px;
+	margin-bottom: 20px;
+}
+
+.content h4{
+	margin-top: 50px;
+	text-transform: none;
+	text-align: left;
+	margin-left: 70px;
+	font-size: 10px;
+}
+
+.content p{
+	color: black;
+	text-align: left;
+	margin-left: 40px;
+	font-size: 20px;
+
+
+}
+hr{
+	width: 648px;
+	height: 3px;
+	border:0;
+	background-color: black;
+	opacity: 0.7;
+	
+}
+.skill-content{
+	display: grid;
+	grid-template-columns: repeat(3,1fr);
+	border:red; 
+}
+.skill-content p{
+	color: black;
+	text-align: left;
+	margin-left: 40px;
+	font-size: 27px;
+}
+.skill-1{
+	margin-top: 20px;
+}
+.skill-2{
+	margin-top: 20px;
+}
+.circle{
+	margin-left: -10px;
+}
+
+.dot{
+	height: 15px;
+	width: 20px;
+	border-radius: 50%;
+	background-color:black;
+	display: inline-block;
+	margin-top: 11px;
+}
+.dot-2{
+	height: 15px;
+	width: 20px;
+	background-color: white;
+	border-radius: 50%;
+	display: inline-block;
+	border: 0.50px solid black;
+	margin-top: 11px;
+}
+/*
+css of Blog
+*/
+#Blog h3{
+	font-size: 30px;
+	margin-bottom: 10px;
+}
+#Blog1 h3{
+	font-size: 30px;
+	margin-bottom: 10px;
+}
+/*Form css*/
+.form-l{
+	margin-top: 40px;
+	margin-left: 350px;
+	margin-bottom: 40px;
+	width: 600px;
+}
+.form-l h1{
+	margin-bottom: 30px;
+
+}
+* {
+  box-sizing: border-box;
+}
+
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+.col-75 {
+  float: left;
+  width: 75%;
+
+  margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* 
+Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other
+ */
+@media screen and (max-width: 600px) {
+  .col-25, .col-75, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+/*
+Table css
+*/
+.table-r{
+	margin-left: 100px;
+	margin-top: 40px;
+	margin-bottom: 40px;
+	width: 600px;
+}
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  text-align: left;
+  padding: 25px;
+}
+
+th {
+  background-color: #4CAF50;
+  color: white;
+}
+/*
+ResearchCSS
+*/
+/*For left section of research*/
+.image-l{
+	margin-left: 0px;
+}
+.image-l h1{
+	margin-top: 30px;
+	margin-bottom: 30px;
+	font-size: 30px;
+}
+.image-l p{
+	margin-top: 30px;
+	margin-bottom: 10px;
+	font-size: 20px;
+	text-align: justify; text-justify: inter-word;
+}
+/*For right section of research*/
+.image-r{
+	margin-left: 250px;
+}
+.image-r h1{
+	margin-top: 30px;
+	margin-bottom: 30px;
+	font-size: 30px;
+}
+.image-r p{
+	margin-top: 30px;
+	margin-bottom: 30px;
+	font-size: 20px;
+	text-align: justify; text-justify: inter-word;
+}
+
+/*
+Footer
+ */
+footer {
+		background-color: #f1f1f1;
+		padding: 20px 20px 20px 30px;
+}
+
+footer .copyright {
+				   color: black;
+			       font-size: 20px;
+			       margin: 40px 0 20px 0;
+			       padding: 0;
+			       text-align: center;
+}
+
+/*
+form describtion
+*/
+textarea {
+  width: 100%;
+  height: 150px;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  background-color: #f8f8f8;
+  font-size: 16px;
+  resize: none;
+}
+
+/*
+provide margin between photo and paragraph for both homepage and blog
+*/
+.col {
+	  margin:60px;
+}
+
+/*Css for both homepage and blog*/
+.col p {
+	    margin: 0 0 10px 0;
+	    line-height: 30px;
+	    font-size: 20px;
+	    text-align: justify; text-justify: inter-word;
+}
+/*
+Flex
+ */
+.flex-container {
+				 display:flex;
+}
+/*main content font size in homepage*/
+.flex-container .col-sm {
+	  					 flex:1;
+}
+/*image size*/
+.flex-container .col-lg {
+					     flex:2;
+}
+
+

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CourseWork3</title>
+	<meta charset="utf-8" />
+	<link rel="stylesheet" type="text/css" href="../css/style.css">
+</head>
+<script type="text/javascript" src="../java/java.js"></script>
+<body>
+	<!--internal css to make suitable logo -->
+	<style>
+		.logo{
+			 padding: 10px 50px;
+			 left: 0;
+			 position: absolute;
+			 }
+
+	</style>
+	<!-- logo and navigation bar -->
+    <header id="header">
+    	<!-- Margin on both sides -->
+		<div class="inner">
+			<a href="index.html" class="logo">
+				<img height="50" width="50"  src="../images/nepal.png">		
+			</a>
+			<!-- name of webpages and linking with each other -->
+			<nav>
+				<a href="../index.html">Home</a>
+				<a href="cv.html">CV</a>
+				<a href="Blog.html">Blog</a>
+				<a href="Research.html">Research</a>
+				<a href="ContactUs.html">Contact Us</a>
+			</nav>
+		</div>		
+	</header>
+		<!-- banner content -->
+		<section class="banner">
+			<!-- margin in both sides -->
+			<div class="inner">
+				<h1>WELCOME TO CONTACT US</h1>
+		</section>
+	</div>
+		<section>
+			<!-- divides into two parts in left and right -->
+			<div class="flex-container">
+				<!-- content of left by using form tag-->
+				<div class="form-l">
+					<H1>Connect With US</H1>
+						<form name="messageForm" onsubmit="validateForm()">
+						  <div class="row">
+						    <div class="col-25">
+						      <label for="fname">First Name</label>
+						    </div>
+						    <div class="col-75">
+						      <input type="text" id="fname" name="firstname" placeholder="Your name..">
+						    </div>
+						  </div>
+						  <div class="row">
+						    <div class="col-25">
+						      <label for="lname">Last Name</label>
+						    </div>
+						    <div class="col-75">
+						      <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+						    </div>
+						  </div>
+						  <div class="row">
+						    <div class="col-25">
+						      <label for="country">Country</label>
+						    </div>
+						    <div class="col-75">
+						      <select id="country" name="country">
+						        <option value="usa">Nepal</option>
+						        <option value="australia">Australia</option>
+						        <option value="canada">Canada</option>
+						        <option value="usa">Thailand</option>
+						        <option value="usa">USA</option>
+						        <option value="usa">China</option>
+						      </select>
+						    </div>
+						  </div>
+						  <div class="row">
+						    <div class="col-25">
+						      <label for="subject">Subject</label>
+						    </div>
+						    <div class="col-75">
+						      <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+						    </div>
+						  </div>
+						  <div class="row">
+						    <input type="submit" value="send"> 
+						  </div>
+						  </form>
+						  <!-- internal Javascript  to popup message in screen for users-->
+						  	<script>
+							  	function validateForm(){
+									var fname= document.forms["messageForm"]["firstname"].value;
+									var lname= document.forms["messageForm"]["lastname"].value;
+									var country= document.forms["messageForm"]["country"].value;
+									var subject= document.forms["messageForm"]["subject"].value;
+									if (fname == "" || lname == "" ||country == " "|| subject == "" ) {
+										alert("Please, fill all the form details to give us feedback.");
+									}
+									else{
+										alert("Feedback successfully send.")
+										}
+									}
+						 	</script>
+				</div>
+				<!-- content of right by using table tag -->
+				<div class="table-r">
+					<h3>Reach Us</h3>
+						<table style="border:none;">
+						  <tr>
+						    <td>Email</td>
+						    <td>Sambhav77@gmail.com</td>
+						  </tr>
+						  <tr>
+						    <td>PhoneNo</td>
+						    <td>9821821784</td>
+						  </tr>
+						  <tr>
+						    <td>Address</td>
+						    <td>Damauli, Tanahun</td>
+						  </tr>
+						  <tr>
+						    <td>Location</td>
+						    <td>Milan tole, Manakama Chowk</td>
+						  </tr>
+						</table>
+				</div>
+			</div>
+		</section>
+<!-- footer content-->
+	<footer>
+				<div class="copyright">
+					<p>&copy; Man Bahadur Thapa. All rights reserved. </p>
+				</div>
+			</footer>
+
+
+</body>
+</html>
